@@ -1,0 +1,195 @@
+<?php
+include("connection.php);
+if(isset($_GEt['submit']))
+{
+$Full name = $_GEt['Full Name'];
+$Phone Number= $_GEt['Phone Number'];
+$Nida = $_GEt['Nida'];
+$Email = $_GEt['Email'];
+$Password = $_GEt['Password'];
+
+$sql ="INSERT INTO users(Full Name,Phone Number,Nida,Email,Password,) values('$Ful Name','$Phone Number','$Nida','$Email','$Password',);";
+
+
+
+
+}
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+<Doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="style22.css">
+<Link rel="icon type="image"/X-icon" href="images/logo.ico">
+<title>homepage</title>
+</head>
+<body>
+
+<!-- LOGIN FORM -->
+<div id="loginPage" class="login-box">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username" required>
+  <input type="password" id="password" placeholder="Password" required>
+  <button onclick="login()">Login</button>
+</div>
+
+<!-- MAIN WEBSITE (HIDDEN UNTIL LOGIN) -->
+<div id="website" class="hidden">
+<div class="table">
+<table border=2 width=100%>
+<form action="" method="GEt">
+<caption class="c"><h1><i>JOMA CAMPANY LTD</H1></i></caption>
+<tr>
+<td class="bttn"><center><a href="home.html">Home</button></a></td>
+<td class="bttn"><center><a href="about.html">About us</button></a></td>
+<td class="bttn"><center><a href="contact.html">contact</button></a></td>
+<td class="bttn"><center><a href="service.html">Services</button></a></td>
+<td class="bttn"><center><a href="help.html">Help</a></td>
+</center>
+</tr>
+<tr>
+<td class="pt" colspan=2>
+<h1><br><br>fuel &<br><span>Diesel supplying</span></h1>
+            <p class="par">Welcome joma compamy to get more services of car<br>is the best filing station 
+<br>grand diesel supplying</b></p>
+<button class="bb"><a href="">join us</a></button>
+</td>
+<td colspan=3 class="tb">
+<table>
+<h2>login here</h2>
+<input type="Email" name="Email" placeholder="Enter Email"><br><br>
+<input type="password" name="password" placeholder="Enter password"><br>
+<a href="#"><button class="btnn">Log in</button></a><br>
+<p class="link">Don't have account<br>
+<a href="">Sign up </a>here</p>
+</table>
+</form>
+</td>
+</tr>
+
+
+<tr>
+<td colspan=2 class="bt2">
+<h2>Hi</h2>
+<h3>
+lorem ipsum dolor sit amet,
+contectetur adipising alit. ab nemo<br>
+quos deserunt, esperiores possims querant,espossimus<br>
+quaerat omnis cum atque venium et. Ea <br>
+tempore illum vel exercitationem delectus itaque espernatue quod?</h3><br>
+<button class="btn-1">Learn more</button>
+<button class="btn-1">Experience</button>
+</td>
+<td colspan=3 class="bt3">
+<img src="images/h.jpg" class="img-box">
+</td></tr>
+
+
+<tr>
+<td colspan=2 class="bt3">
+<h2>About joma compamy</h3>
+<h3>
+Welcome <span>joma Company ltd</span> is the more professional<br>
+for supplying fuel,diesel,oil and car maintenance<br>
+<br>
+<h2>Here ara some Services that found in <br></span>joma compamy ltd</span></h2>
+<ul type="square">
+<li>fuel supplying</li>
+<li>Diesel supplying</li>
+<li>oil supplying</li>
+<li>car maintenance</li>
+</ul>
+<button class="btn-1">Learn more</button>
+<button class="btn-1">Experience</button>
+</td>
+
+<td colspan=3 class="tbb">
+<h1>Sign up Here</h1>
+<label>Full Name</label><br>
+<input type="Email" name="Full Name"><br>
+
+<label>Phone Number</label><br>
+<input type="Number" name="Phone Number"><br>
+
+
+<label>NIDA</label><br>
+<input type="number" name="Nida"><br>
+
+<label>Email</label><br>
+<input type="email" name="Email"><br>
+
+<label>Password</label><br>
+<input type="password" name="Password1"><br>
+<button class="bg" name="submit"><a href="">Submit</a></button>
+</td>
+</tr>
+
+
+<tr>
+<td class="vv">
+<h2>fuel  supplying</h2><br>
+<img src="images/f.jpg" class="img-box2">
+</td>
+
+<td class="vv">
+<h2>Diesel supplying</h2><br>
+<img src="images/d.jpg" class="img-box2">
+</td>
+
+<td class="vv">
+<h2>oil supplying</h2><br>
+<img src="images/o.jpg" alt="web development" class="img-box2" >
+</td>
+
+<td class="vv">
+<h2>car maintenance</h2><br>
+<img src="images/c.jpg" class="img-box2">
+</td>
+</table>
+</div>
+</div>
+
+
+<!-- JAVASCRIPT LOGIN LOGIC -->
+<script>
+  function login() {
+    const user = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
+
+    // Simple fixed login for demo
+    if (user === "joma" && pass === "1234") {
+      document.getElementById("loginPage").style.display = "none";
+      document.getElementById("website").classList.remove("hidden");
+    } else {
+      alert("Invalid username or password!");
+    }
+  }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
